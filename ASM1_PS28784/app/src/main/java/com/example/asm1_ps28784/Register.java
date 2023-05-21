@@ -35,7 +35,7 @@ public class Register extends AppCompatActivity {
                 String confPass = tieConfirmPass.getText().toString();
                 boolean p = password.equals(confPass);
                 if (p) {
-                    Toast.makeText(Register.this, "Dang ky thanh cong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Dang ky thanh cong rồi bạn ơi!!!", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(Register.this, MainActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putString("username", user);
