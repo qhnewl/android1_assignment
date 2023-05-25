@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "776325239523",
+    "firebase_url": "https://asmandroid1-default-rtdb.firebaseio.com",
+    "project_id": "asmandroid1",
+    "storage_bucket": "asmandroid1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776325239523:android:1e328c2a3702c447f86bd6",
+        "android_client_info": {
+          "package_name": "com.example.asm1_ps28784"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776325239523-uqohvue9bk0bsoko8ackn875rb4br4qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIT4FQ52SbAwPq-GtE3YVj24zE6r71W04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776325239523-uqohvue9bk0bsoko8ackn875rb4br4qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
