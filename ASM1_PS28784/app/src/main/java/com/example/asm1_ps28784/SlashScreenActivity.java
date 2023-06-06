@@ -5,10 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 
 public class SlashScreenActivity extends AppCompatActivity {
 
@@ -17,10 +13,12 @@ public class SlashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slash_screen);
 
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SlashScreenActivity.this, MainActivity.class));
+                startActivity(new Intent(SlashScreenActivity.this, Firth_Screen.class));
             }
         }, 3000);
     }

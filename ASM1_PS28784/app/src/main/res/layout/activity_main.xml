@@ -4,23 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/backgr_login"
+
+    tools:context=".Login">
+
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="3dp"
-        android:text="Chào mừng bạn đã chở lại,"
+        android:text="Chào mừng bạn,"
         android:textColor="#03A9F4"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.268" />
 
     <TextView
         android:id="@+id/textView6"
@@ -28,7 +31,7 @@
         android:layout_height="38dp"
         android:layout_marginLeft="3dp"
         android:text="Vui lòng đăng nhập để tiếp tục"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +48,6 @@
         app:counterEnabled="true"
         app:errorEnabled="true"
         app:hintEnabled="true"
-        app:counterMaxLength="20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -59,7 +61,6 @@
             android:layout_height="wrap_content"
             android:hint="nhập username"
             android:inputType="textEmailAddress"
-            android:maxLength="20"
             app:counterEnabled="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,7 +85,6 @@
             android:layout_height="wrap_content"
             android:hint="nhập password"
             android:inputType="textPassword"
-            android:maxLength="10"
             app:counterEnabled="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,29 +102,35 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="160dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
+        android:layout_marginTop="56dp"
         android:text="ĐĂNG NHẬP"
-        app:backgroundTint="@color/design_default_color_secondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnRegister"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:textAllCaps="false"
+        android:textSize="10dp"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox"
-        app:layout_constraintVertical_bias="0.287" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="160dp"
+        android:id="@+id/btnBack"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:text="ĐĂNG KÝ"
-        app:backgroundTint="?attr/colorError"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Trở lại"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/tilPass"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

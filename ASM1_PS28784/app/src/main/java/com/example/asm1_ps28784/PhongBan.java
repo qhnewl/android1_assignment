@@ -16,7 +16,6 @@ public class PhongBan extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Phòng Ban");
-
     }
 
     @Override
@@ -27,5 +26,7 @@ public class PhongBan extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }
